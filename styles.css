@@ -158,6 +158,11 @@ a:focus-visible { outline: 2px solid var(--brown); outline-offset: 5px; }
 .project-notes > div { padding-top: 11px; border-top: 1px solid var(--line); }
 .project-notes h4 { margin: 0 0 5px; color: var(--brown); font: 10px var(--mono); letter-spacing: .05em; text-transform: uppercase; }
 .project-notes p { max-width: 480px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.7; }
+.project-outline { display: grid; gap: 0; margin: 22px 0 20px; border-top: 1px solid var(--line); }
+.project-outline > div { display: grid; grid-template-columns: 105px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.project-outline dt { color: var(--brown); font: 10px/1.6 var(--mono); text-transform: uppercase; letter-spacing: .035em; }
+.project-outline dd { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+.project-outline .stack-pending { color: #8a8174; font-style: italic; }
 .project-link { display: inline-flex; justify-content: space-between; align-items: center; gap: 20px; font: 12px var(--mono); letter-spacing: .045em; }
 .project-link span { color: var(--brown); font-size: 13px; }
 .project-link.is-placeholder { color: var(--muted); }
@@ -321,6 +326,9 @@ body.uses-custom-cursor .image-lightbox[open] .custom-cursor--dialog.is-visible 
   .project-info > p { min-height: 0; font-size: 14px; }
   .project-label, .project-link { font-size: 10px; }
   .project-notes p { font-size: 14px; }
+  .project-outline > div { grid-template-columns: 96px 1fr; gap: 9px; padding: 9px 0; }
+  .project-outline dt { font-size: 9px; }
+  .project-outline dd { font-size: 13px; }
   .about-layout { display: block; padding: 42px 0 0; }
   .quote-mark { display: block; height: 72px; font-size: 91px; }
   .about-layout h2 { font-size: clamp(43px, 11.7vw, 66px); }

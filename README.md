@@ -6,9 +6,11 @@ A static portfolio built with HTML, CSS, and JavaScript. Open `index.html` direc
 
 - The portrait at `assets/profile-portrait.png` is used in the arched frame. Replace that file to use a different photo; the crop and responsive sizing are styled in `styles.css`.
 - Project 01 is GlowGuide and uses `assets/glowguide.png` as its screenshot.
+- GlowGuide's outline records React, Vite, Tailwind CSS, React Router, Axios, Framer Motion, Java 17, Spring Boot, REST, Spring Security, JWT, MongoDB Atlas, Cloudinary, Vercel, Render, Docker, and GitHub.
 - Project 02 is Quick Dine and uses `assets/quick-dine.png` as its screenshot.
 - Project 03 is Rank SEO and uses `assets/rank-seo.png` as its screenshot.
 - Project 04 is ApplyFlow and uses `assets/applyflow.png` as its screenshot.
+- Project outlines include project type, role, stack, and project-specific details such as storage and deployment where relevant. Quick Dine and Rank SEO details were checked against the supplied descriptions and project manifests.
 - GlowGuide links to `https://glow-guide-lyart-mu.vercel.app/`, Quick Dine to `https://quick-dine-xynv.vercel.app/`, Rank SEO to `https://seo-rank-jet.vercel.app`, and ApplyFlow to `https://apply-flow-mine.vercel.app`.
 - The Resume section previews `assets/Priscilla_Enyidum_CV.pdf` and provides PDF and Word downloads.
 - The content currently reflects the biography and technology details provided in chat. Update or remove anything that changes over time.
