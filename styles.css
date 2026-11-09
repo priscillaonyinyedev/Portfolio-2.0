@@ -380,6 +380,35 @@ body.uses-custom-cursor .image-lightbox[open] .custom-cursor--dialog.is-visible 
   .project-art { min-height: 300px; }
   .source-link { display: block; margin: 14px 0 0; }
 }
+/* Touch-first refinements keep the desktop composition intact while making controls
+   and image previews comfortable to use on smaller phones. */
+@media (max-width: 580px) {
+  .site-header nav a { min-height: 34px; display: inline-flex; align-items: center; }
+  .hero-actions { flex-wrap: wrap; row-gap: 14px; }
+  .hero-actions .button, .nav-cta { min-height: 44px; }
+  .project-art.project-preview { border-radius: 12px; }
+  .project-outline > div { grid-template-columns: minmax(82px, 28%) minmax(0, 1fr); }
+  .project-outline dd { overflow-wrap: anywhere; }
+  .resume-actions { flex-wrap: wrap; justify-content: flex-start; row-gap: 10px; }
+  .resume-actions .button, .resume-actions .resume-download { min-height: 44px; display: inline-flex; align-items: center; }
+  .lightbox-close { min-height: 44px; }
+  .zoom-controls button { min-width: 40px; min-height: 40px; }
+  .lightbox-image-viewport { height: min(62dvh, 620px); max-height: calc(100dvh - 190px); }
+}
+@media (max-width: 360px) {
+  .hero-actions { align-items: flex-start; gap: 12px; }
+  .hero-actions .button { padding-inline: 15px; }
+  .section-head { gap: 10px; }
+  .project-label { gap: 10px; }
+  .project-label span:last-child { text-align: right; }
+  .resume-actions { column-gap: 8px; }
+  .resume-actions .button { padding-inline: 10px; font-size: 11px; }
+}
+@media (hover: none), (pointer: coarse) {
+  .project-art.project-preview, .zoom-controls button { cursor: pointer; }
+  .project-art.project-preview .preview-hover { opacity: 1; padding: 14px; background: linear-gradient(180deg, transparent 62%, rgba(36,32,25,.46)); }
+  .project-art.project-preview:active { transform: scale(.99); }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   [data-reveal] { opacity: 1; transform: none; }
